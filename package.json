@@ -1,0 +1,11 @@
+{
+  "name": "curso-mod-01",
+  "version": "1.0.0",
+  "description": "curso node basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

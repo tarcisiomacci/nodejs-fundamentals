@@ -3,13 +3,25 @@
   <%- include('./partials/header.ejs') %>
   <body>
     <%- include('./partials/navbar.ejs') %>
-    <div class="content">
-      <% if (users.length > 0) { %> <% users.forEach( user => { %>
-      <h3 class="title"><%= user.firstName %> <%= user.lastName %></h3>
-      <p><%= user.email %></p>
-      <% }) %> <% } else { %>
-      <p>Nenhum dado de usuario para ser exibido</p>
-      <% } %>
+    <div class="container">
+      <p>
+        Para acessar o curso desse conteúdo
+        <a
+          href="https://www.youtube.com/watch?v=IOfDoyP1Aq0&ab_channel=FelipeRocha%E2%80%A2dicasparadevs"
+          target="_blank"
+        >
+          clique aqui
+        </a>
+      </p>
+
+      <div class="content">
+        <% if (users.length > 0) { %> <% users.forEach( user => { %>
+        <h3 class="title"><%= user.firstName %> <%= user.lastName %></h3>
+        <p><%= user.email %></p>
+        <% }) %> <% } else { %>
+        <p>Nenhum dado de usuario para ser exibido</p>
+        <% } %>
+      </div>
     </div>
   </body>
 </html>
